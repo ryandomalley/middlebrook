@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  padding: .75em 1em;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: #337fe2;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3d91ff;
+}
+
+p, button, a {
+  font-size: .9rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h1, h2, button, .nav-element {
+  font-weight: 700;
+}
+
+.nav-logo {
+  -ms-grid-column-align: left;
+      justify-self: left;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.nav-logo, .footer-logo {
+  width: 12em;
+}
+
+.nav-menu-button {
+  font-size: 1.5rem;
+  color: #231F20;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  float: right;
+}
+
+.nav-container {
+  padding: 0 1.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  min-height: 80px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 500px;
+  padding: 0 1.5em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/media/heroImage.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/media/heroImage.png");
+  background-size: cover;
+}
+
+.body-wrapper {
+  margin: 0 1.5em;
+}
+
+.body-element-container {
+  color: #231F20;
+  margin: 0 auto;
+  margin-top: 3em;
+  padding: 0 auto;
+  max-width: 900px;
+}
+
+.hero-CTA-container {
+  color: white;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.CTA-btn {
+  margin-top: 1.5em;
+}
+
+.testimonial-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5em;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.testimonial-paragraph {
+  text-align: left;
+}
+
+.testimonial-image {
+  width: 10em;
+  border-radius: 50%;
+}
+
+.services-container {
+  margin-top: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5em;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-size: cover;
+  width: 17em;
+  height: 17em;
+}
+
+.first-body-element {
+  margin-top: 1.5em;
+}
+
+#pest-service {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/media/services/pest-control.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/media/services/pest-control.jpg");
+}
+
+#termite-service {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/media/services/termite-control.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/media/services/termite-control.png");
+}
+
+#additional-services {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/media/services/termite-control.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/media/services/termite-control.png");
+}
+
+.footer-container {
+  background-color: #F3F3F3;
+  padding: 1.5em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #231F20;
+}
+
+.footer-nav {
+  display: -ms-grid;
+  display: grid;
+  text-align: left;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  gap: 1em;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 1.5em;
+  max-width: 272px;
+}
+
+.active {
+  color: #337fe2;
+}
+
+.last-body-element {
+  margin-bottom: 1.5em;
+}
+
+.footer-credit {
+  color: #231F20;
+  margin-top: 1.5em;
+  font-size: .7rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .testimonial-block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .services-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+/*# sourceMappingURL=styling.css.map */
