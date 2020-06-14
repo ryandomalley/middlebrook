@@ -42,9 +42,6 @@ h1, h2, button, .nav-element {
 .nav-logo {
   -ms-grid-column-align: left;
       justify-self: left;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 .nav-logo, .footer-logo {
@@ -56,10 +53,12 @@ h1, h2, button, .nav-element {
   color: #231F20;
   -ms-grid-column-align: right;
       justify-self: right;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   float: right;
+  cursor: pointer;
+}
+
+.nav-link-container {
+  display: none;
 }
 
 .nav-container {
@@ -68,6 +67,9 @@ h1, h2, button, .nav-element {
   display: grid;
   -ms-grid-columns: 70% 30%;
       grid-template-columns: 70% 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 80px;
   margin: 0 auto;
   max-width: 900px;
